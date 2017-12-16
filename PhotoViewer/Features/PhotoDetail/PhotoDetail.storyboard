@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYl-Vp-NB0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="9aA-S1-T2b">
+            <objects>
+                <viewController id="sYl-Vp-NB0" customClass="PhotoDetailViewController" customModule="PhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wkC-jV-nVY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-nb-CMo">
+                                <rect key="frame" x="16" y="20" width="343" height="631"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fz9-nb-CMo" firstAttribute="top" secondItem="qxo-A9-RAY" secondAttribute="top" id="Pxf-lp-1Sy"/>
+                            <constraint firstItem="qxo-A9-RAY" firstAttribute="bottom" secondItem="fz9-nb-CMo" secondAttribute="bottom" constant="16" id="VOh-E4-Rom"/>
+                            <constraint firstItem="fz9-nb-CMo" firstAttribute="leading" secondItem="qxo-A9-RAY" secondAttribute="leading" constant="16" id="acq-NK-JH0"/>
+                            <constraint firstItem="qxo-A9-RAY" firstAttribute="trailing" secondItem="fz9-nb-CMo" secondAttribute="trailing" constant="16" id="ovi-0d-xve"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qxo-A9-RAY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fz9-nb-CMo" id="57t-w6-7SL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1G-yi-qDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="95"/>
+        </scene>
+    </scenes>
+</document>
